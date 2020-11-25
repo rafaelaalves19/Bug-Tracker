@@ -26,7 +26,7 @@ This project is an assignment regarded to Cloud Based Web Applications lecture, 
 
 
 ## Setup
-* Download the project repository from GitHub in this link: https://github.com/rafaelaalves19/cbwa-ca-1
+* Download the project repository from GitHub in this link: https://github.com/rafaelaalves19/Bug-Tracker
 * Open the project in an IDE
 * Change the directory in the Terminal 
 * Run npm install for installing all the dependecies
