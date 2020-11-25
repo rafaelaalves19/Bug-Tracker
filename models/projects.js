@@ -6,9 +6,9 @@ module.exports = () => {
 
     
 
-    const get = async (slug = null) => {
+    const get = async (slugName = null) => {
         
-        if(!slug){
+        if(!slugName){
             try{
             const slug = await db.get(COLLECTION);
             return {slug};
@@ -21,7 +21,7 @@ module.exports = () => {
     }
 
             try {
-            const slug = await db.get(COLLECTION, {slug});
+            const slug = await db.get(COLLECTION, {slug: slugName});
             return {slug};
         } catch(err){
             console.log(err);

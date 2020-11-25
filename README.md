@@ -30,26 +30,28 @@ This project is an assignment regarded to Cloud Based Web Applications lecture, 
 * Open the project in an IDE
 * Change the directory in the Terminal 
 * Run npm install for installing all the dependecies
-* Run npm start for running the application in the browser
+* Run npm start and pass the EMAIL, MONGO_URI and PASSWORD as envinroment variables
 
 
 ## Code Examples
 GET routes: 
-* Getting all projects: GET / localhost / projects
 * Getting all users: GET / localhost / users
 * Getting all issues: GET / localhost / issues
-* Getting all comments: GET / localhost / comments
-* Getting individual projects by slug: GET / localhost / projects / :slug
-* Getting users by email: GET / localhost / users / :email
-* Getting all issues for a project by slug: GET / localhost / projects / :slug / issues
-* Getting all comments for an issue: GET / localhost / issues / :issueNumber / comments
-* Getting specific comment for an issue: GET / localhost / issues / :issueNumber / comments / :commentID
+* Getting all projects: GET / localhost / projects
+* Getting an individual user: GET /localhost / users / :email
+* Getting an individual issue: GET / localhost/issues / :slug
+* Getting all the issues related to a project: GET / localhost / projects / :slug / issues
+* Getting all comment in an specific issue: GET / localhost / issues / :issueNumber / comments
+* Getting an specific comment by an specific id: GET / localhost /issues / comments / :commentId
+* Getting one specific project: GET / localhost / projects / :slug
+
 
 ADD / POST routes:
-* Adding a new project: POST / localhost / projects
 * Adding a new user: POST / localhost / users
-* Adding a new issues: POST / localhost / projects / :slug / issues
-* Adding a new comment to an issue: POST / localhost / issues / :issueNumber / comments
+* Adding an issue in a project: POST / localhost / projects / :slug / issues
+* Adding a comment in an issue: POST / localhost / issues / :issueNumber / comments
+* Adding a new project: POST / localhost / projects
+
 
 
 ## Features
@@ -73,4 +75,4 @@ PART 2 - CBWA Assignment:
 
 
 ## Contact
-Created by [@rafaelaalves19] - feel free to contact me!
+Created by [@rafaelaalves19](https://github.com/rafaelaalves19) - feel free to contact me!
